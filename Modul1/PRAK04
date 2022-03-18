@@ -1,0 +1,18 @@
+
+class Teknologi(nama: String, bahasa: String, tahun: Int)
+{
+    var nNama = nama
+    var nBahasa = bahasa
+    var nTahun = tahun
+    fun info() {
+        var detail = """ Nama Software $nNama , menggunakan bahasa $nBahasa,
+        dan dibuat pada tahun $nTahun"""
+        println(detail)
+    }
+}
+
+fun main (args: Array <String>)
+{
+  val obj = Teknologi("Guru.id", "Python", 2010)
+    obj.info()
+}
