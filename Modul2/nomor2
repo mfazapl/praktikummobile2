@@ -1,0 +1,21 @@
+import java.util.*
+
+
+class Math(x: Int=0)
+{
+   var num1 = x
+
+    fun rumus() {
+        val hasil =2 * (num1 * num1) + 5 * num1 - 8
+        println("$hasil")
+    }
+
+}
+
+fun main (args: Array<String>)
+{
+    val obj = Math()
+    val scan = Scanner(System.`in`)
+    obj.num1 = scan.nextInt()
+    obj.rumus()
+}
